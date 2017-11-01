@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5803c479-a59f-4a38-92c8-6c704b5b08ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStation/BusStation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStop/BusStop.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Events/GetOff.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Events/GetOn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TicketCheck.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TrafficJam.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/utils/CreateBusStops.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/utils/EventOccurrenceRandomizer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/utils/RandomizeNumberOfPeople.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Bus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStop.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/BusDriver.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/BusDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Person.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Person.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +17,8 @@
       <file leaf-file-name="Bus.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/Bus/Bus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state relative-caret-position="147">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -488,7 +474,7 @@
       <workItem from="1509016232545" duration="3223000" />
       <workItem from="1509019507351" duration="6382000" />
       <workItem from="1509435555237" duration="6149000" />
-      <workItem from="1509564542745" duration="3210000" />
+      <workItem from="1509564542745" duration="3346000" />
     </task>
     <task id="LOCAL-00001" summary="added documentation">
       <created>1508957276560</created>
@@ -511,15 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1509023098783</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="better structure, new classes">
+      <created>1509568343271</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1509568343271</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27224000" />
+    <option name="totallyTimeSpent" value="27360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -561,7 +553,8 @@
     <MESSAGE value="added documentation" />
     <MESSAGE value="created classes" />
     <MESSAGE value="creating generation of random names" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating generation of random names" />
+    <MESSAGE value="better structure, new classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="better structure, new classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -905,8 +898,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/Bus/Bus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="147">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
