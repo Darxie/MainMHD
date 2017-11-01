@@ -1,15 +1,21 @@
 package com.feldis.mhd.java.Person;
 
-public class BusDriver {
+import com.feldis.mhd.java.NameList.RandomNameGenerator;
 
+import java.util.Random;
 
-    private String name;
+public class BusDriver extends Person{
+
+    private BusDriver(){
+
+    }
 
     public static void main(String[] args) {
 
         BusDriver prvy = new BusDriver();
-        prvy.name = Person.nameOfPerson;
-        System.out.println(prvy.name);
+        System.out.println();
+
+
 
     }
 }
