@@ -7,4 +7,6 @@ public class BusStation {
         int posY = 55;
         int availableBuses = 45;
     }
+
+
 }

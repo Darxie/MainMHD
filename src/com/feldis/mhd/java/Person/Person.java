@@ -6,6 +6,7 @@ public class Person {
 
     public Person() {
         String nameOfPerson = RandomNameGenerator.funkcia();
+        System.out.println(nameOfPerson);
     }
 
 
