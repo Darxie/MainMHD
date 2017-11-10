@@ -1,0 +1,44 @@
+
+Object list :
+
+autobus { koleso - flat/!flat, pocet miest na sedenie, linka, array of people, actualBusStop, state (normal, broken down..)}
+cestujuci extends clovek  if age higher than a specific value - sit down, state}
+stanica {array of buses/available buses}
+revizor extends clovek
+zastavka {place, numberOfWaitingTravellers, has a coverage against rain}
+cesta {ToDO}
+clovek {randomly generated age, names (from an array of available names), other attributes}
+sofer extends clovek {fast/slow driver might alter the times of the total time of the trip (constant value)}
+
+Methods
+
+nastupit();
+vystupit();
+vypocitajVzdialenostZastavky(bod);
+preplnenyAutobus();
+
+Flow:
+
+busStops have random static x,y values - the distances between them can be determined
+                                       - the distance of the bus from the stop can be determined by some calculations
+
+there will be several busLines (e.g. 4, 50, 96 etc.), which will have a given order of the bus stops
+                                       - it will be possible to choose the desired line and watch its flow
+
+the cost of fuel and the bus.tank (the size of the tank) will be set, therefore the bus.tank value will decrease
+                                                                                    with the number of busStops
+
+inspector objects will pop up randomly and check if the passengers do have a valid ticket upon entering the vehicle
+                                       - this might just call a method to print the number of people who did not
+                                       purchase a ticket
+                                       - alternatively, the people will be charged and the money will appear in some
+                                       shared account of the provider (we will call it a chest, which will hold the
+                                       amount of money and will be accessible from everywhere)
+                                       - the two points above might be implemented
+                                       -
+
+a congestion/jam/accident events will be implemented, randomizing the time value within a certain interval to be added
+                                               to the total time of the trip, changing some other values along the way
+
+the moveToTheNextStop() method will take the calculateDistance() method to calculate the distance from the actual
+                                                                             position of the bus to the next stop
