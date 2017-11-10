@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5803c479-a59f-4a38-92c8-6c704b5b08ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusLines/BusLine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusLines/Line.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Dispatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Timer/Timer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/utils/CalculateDistance.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MainMHD/com/feldis/mhd/java/Bus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MainMHD/com/feldis/mhd/java/BusStop.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MainMHD/com/feldis/mhd/java/NameList/NameList.class" afterPath="$PROJECT_DIR$/out/production/MainMHD/com/feldis/mhd/java/NameList/NameList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MainMHD/com/feldis/mhd/java/Person/BusDriver.class" afterPath="$PROJECT_DIR$/out/production/MainMHD/com/feldis/mhd/java/Person/BusDriver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MainMHD/com/feldis/mhd/java/Person/Person.class" afterPath="$PROJECT_DIR$/out/production/MainMHD/com/feldis/mhd/java/Person/Person.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/MainMHD/com/feldis/mhd/java/utils/CreateBusStops.class" afterPath="$PROJECT_DIR$/out/production/MainMHD/com/feldis/mhd/java/utils/CreateBusStops.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Bus/Bus.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Bus/Bus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStation/BusStation.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStation/BusStation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStop/BusStop.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStop/BusStop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/NameList/NameList.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/NameList/NameList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/BusDriver.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/BusDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Person.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/utils/CreateBusStops.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/utils/CreateBusStops.java" />
-    </list>
+    <list default="true" id="5803c479-a59f-4a38-92c8-6c704b5b08ae" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -198,7 +177,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="951" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
@@ -566,7 +545,7 @@
       <workItem from="1509631102475" duration="4336000" />
       <workItem from="1509640613354" duration="919000" />
       <workItem from="1510233580183" duration="4711000" />
-      <workItem from="1510245487079" duration="13510000" />
+      <workItem from="1510245487079" duration="13586000" />
     </task>
     <task id="LOCAL-00001" summary="added documentation">
       <created>1508957276560</created>
@@ -603,14 +582,21 @@
       <option name="project" value="LOCAL" />
       <updated>1509622175647</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="moving">
+      <created>1510349341483</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1510349341485</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55470000" />
+    <option name="totallyTimeSpent" value="55546000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -655,7 +641,8 @@
     <MESSAGE value="creating generation of random names" />
     <MESSAGE value="better structure, new classes" />
     <MESSAGE value="fixed naming" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed naming" />
+    <MESSAGE value="moving" />
+    <option name="LAST_COMMIT_MESSAGE" value="moving" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -850,6 +837,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="84" lean-forward="false" selection-start-line="5" selection-start-column="84" selection-end-line="5" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
