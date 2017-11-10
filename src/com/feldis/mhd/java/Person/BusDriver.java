@@ -2,10 +2,11 @@ package com.feldis.mhd.java.Person;
 
 public class BusDriver extends Person{
 
-    boolean isBusDriver = true;
-    private static int counter;
+    private boolean isBusDriver;
+    private static int counter = 0;
 
     private BusDriver(){
+        isBusDriver = true;
         counter++;
     }
 
@@ -17,8 +18,5 @@ public class BusDriver extends Person{
 
         BusDriver prvy = new BusDriver();
         BusDriver druhy = new BusDriver();
-
-
-
     }
 }
