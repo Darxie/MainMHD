@@ -9,9 +9,6 @@ public class Person {
         //System.out.println(nameOfPerson);
     }
 
-    void getIn(Person person){
-
-    }
 
 
 

@@ -2,7 +2,8 @@ package com.feldis.mhd.java.utils;
 
 import com.feldis.mhd.java.BusLines.BusLine;
 import com.feldis.mhd.java.BusStop.BusStop;
-import javafx.geometry.Pos;
+import com.feldis.mhd.java.Person.Passenger;
+import com.feldis.mhd.java.Timer.Timer;
 
 import java.util.Arrays;
 
@@ -31,9 +32,11 @@ public class CreateBusStops {
         System.out.println(line.getFirstStop());
 
 
-        System.out.println(Lafranconi.posX + " " + Lafranconi.posY + " " + Lafranconi.people);
-        System.out.println(Gagarinova.posX + " " + Gagarinova.posY + " " + Gagarinova.people);
+        System.out.println(Lafranconi.posX + " " + Lafranconi.posY + " " + Lafranconi.nOfPeople);
+        System.out.println(Gagarinova.posX + " " + Gagarinova.posY + " " + Gagarinova.nOfPeople);
 
         System.out.println(distance(Kuliskova.posX,Kuliskova.posY,Lafranconi.posX,Lafranconi.posY));
+
+        System.out.println(new Timer(Kuliskova,Lafranconi).time);
     }
 }
