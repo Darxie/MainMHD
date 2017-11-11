@@ -1,6 +1,7 @@
 package com.feldis.mhd.java.utils;
 
 import com.feldis.mhd.java.BusLines.BusLine;
+import com.feldis.mhd.java.BusLines.Line30;
 import com.feldis.mhd.java.BusStop.BusStop;
 import com.feldis.mhd.java.Person.Passenger;
 import com.feldis.mhd.java.Timer.Timer;
@@ -11,7 +12,7 @@ import static com.feldis.mhd.java.utils.CalculateDistance.distance;
 
 public class CreateBusStops {
 
-    public static void CreateBusStops() {
+    public static BusStop[] CreateBusStops() {
 
         BusStop Karadzicova = new BusStop(10,20, RandomizeNumberOfPeople.main(), "Karadzicova");
         BusStop Slovnaftska = new BusStop(35,-40, RandomizeNumberOfPeople.main(), "Slovnaftska");
@@ -34,5 +35,6 @@ public class CreateBusStops {
         System.out.println(distance(Kuliskova.posX,Kuliskova.posY,Lafranconi.posX,Lafranconi.posY));
 
         //System.out.println(new Timer(Kuliskova,Lafranconi).time);
+        return new BusStop[]{Gagarinova, Karadzicova, Mudronova, Botanicka, Slovnaftska};
     }
 }

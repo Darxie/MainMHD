@@ -14,11 +14,10 @@ public class Line30 extends BusLine{
     }
 
     public Line30() {
-        Line30 line30 = new Line30();
-        new CreateBusStops();
-        line30.createLine30(Gagarinova, Karadzicova, Mudronova, Botanicka, Slovnaftska);
+        BusStop[] busStops = CreateBusStops.CreateBusStops();
+        createLine30(busStops);
 
         System.out.println(Arrays.toString(Line30.line.toArray()));
-        System.out.println(line30.getFirstStop());
+        System.out.println(getFirstStop());
     }
 }
