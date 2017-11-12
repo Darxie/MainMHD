@@ -1,10 +1,9 @@
 package com.feldis.mhd.java;
 
-import com.feldis.mhd.java.person.Dispatcher;
+import com.feldis.mhd.java.Person.Dispatcher;
 
 public class Main {
     public static void main(String[] args) {
-
         new Dispatcher();
     }
 }
