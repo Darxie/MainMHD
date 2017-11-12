@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5803c479-a59f-4a38-92c8-6c704b5b08ae" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Dispatcher.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Dispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Timer/Timer.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Timer/Timer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -244,7 +242,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
@@ -607,7 +605,7 @@
       <workItem from="1509640613354" duration="919000" />
       <workItem from="1510233580183" duration="4711000" />
       <workItem from="1510245487079" duration="13586000" />
-      <workItem from="1510491312759" duration="3071000" />
+      <workItem from="1510491312759" duration="3386000" />
     </task>
     <task id="LOCAL-00001" summary="added documentation">
       <created>1508957276560</created>
@@ -665,14 +663,21 @@
       <option name="project" value="LOCAL" />
       <updated>1510493166321</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="kinda integrated timer">
+      <created>1510494780194</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1510494780194</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74100000" />
+    <option name="totallyTimeSpent" value="74415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -683,7 +688,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3112583" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28377065" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30965006" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -721,7 +726,8 @@
     <MESSAGE value="partially implemented timer" />
     <MESSAGE value="refactored package names, improved dispatcher" />
     <MESSAGE value="Revert &quot;refactoring&quot;&#10;&#10;This reverts commit 4ea4a2c021caa3bf083e7607bbb836cfd619d6b2.&#10;&#10;# Conflicts:&#10;#&#9;src/com/feldis/mhd/java/Bus/Bus.java&#10;#&#9;src/com/feldis/mhd/java/Person/Dispatcher.java&#10;#&#9;src/com/feldis/mhd/java/Person/Passenger.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;refactoring&quot;&#10;&#10;This reverts commit 4ea4a2c021caa3bf083e7607bbb836cfd619d6b2.&#10;&#10;# Conflicts:&#10;#&#9;src/com/feldis/mhd/java/Bus/Bus.java&#10;#&#9;src/com/feldis/mhd/java/Person/Dispatcher.java&#10;#&#9;src/com/feldis/mhd/java/Person/Passenger.java" />
+    <MESSAGE value="kinda integrated timer" />
+    <option name="LAST_COMMIT_MESSAGE" value="kinda integrated timer" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
