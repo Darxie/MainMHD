@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5803c479-a59f-4a38-92c8-6c704b5b08ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Bus/Bus.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Bus/Bus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusLines/BusLine.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusLines/BusLine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusLines/Line30.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusLines/Line30.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStation/BusStation.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStation/BusStation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStop/BusStop.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStop/BusStop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TicketCheck.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TicketCheck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TrafficJam.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TrafficJam.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/NameList/NameList.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/NameList/NameList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/NameList/RandomNameGenerator.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/NameList/RandomNameGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/BusDriver.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/BusDriver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Dispatcher.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Dispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Passenger.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Passenger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Person.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/Timer/Timer.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/Timer/Timer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/feldis/mhd/java/utils/CreateBusStops.java" afterPath="$PROJECT_DIR$/src/com/feldis/mhd/java/utils/CreateBusStops.java" />
-    </list>
+    <list default="true" id="5803c479-a59f-4a38-92c8-6c704b5b08ae" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +18,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/BusLines/Line30.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="119">
-                  <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+                  <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -59,7 +42,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/BusStop/BusStop.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="119">
-                  <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+                  <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -69,7 +52,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/Bus/Bus.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="272">
-                  <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                  <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -91,7 +74,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TrafficJam.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="85">
-                  <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -101,7 +84,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TicketCheck.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="68">
-                  <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -111,7 +94,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/BusStation/BusStation.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="221">
-                  <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                  <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -121,7 +104,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/BusLines/Line50.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="221">
-                  <caret line="13" column="67" lean-forward="true" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+                  <caret line="13" column="67" lean-forward="false" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -169,7 +152,7 @@
             <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/Timer/Timer.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="238">
-                  <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                  <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -233,12 +216,12 @@
         <option value="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/BusDriver.java" />
         <option value="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Dispatcher.java" />
         <option value="$PROJECT_DIR$/src/com/feldis/mhd/java/Person/Passenger.java" />
-        <option value="$PROJECT_DIR$/src/com/feldis/mhd/java/Bus/Bus.java" />
         <option value="$PROJECT_DIR$/src/com/feldis/mhd/java/Timer/Timer.java" />
         <option value="$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TrafficJam.java" />
         <option value="$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TicketCheck.java" />
         <option value="$PROJECT_DIR$/src/com/feldis/mhd/java/BusStation/BusStation.java" />
         <option value="$PROJECT_DIR$/src/com/feldis/mhd/java/BusLines/Line50.java" />
+        <option value="$PROJECT_DIR$/src/com/feldis/mhd/java/Bus/Bus.java" />
       </list>
     </option>
   </component>
@@ -611,7 +594,7 @@
       <workItem from="1509640613354" duration="919000" />
       <workItem from="1510233580183" duration="4711000" />
       <workItem from="1510245487079" duration="13586000" />
-      <workItem from="1510491312759" duration="465000" />
+      <workItem from="1510491312759" duration="582000" />
     </task>
     <task id="LOCAL-00001" summary="added documentation">
       <created>1508957276560</created>
@@ -666,7 +649,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71494000" />
+    <option name="totallyTimeSpent" value="71611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -934,7 +917,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/Timer/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -996,7 +979,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TrafficJam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1004,7 +987,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/Events/TicketCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1012,7 +995,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/BusStop/BusStop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1020,7 +1003,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/BusStation/BusStation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1028,7 +1011,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/BusLines/Line50.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="67" lean-forward="true" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+          <caret line="13" column="67" lean-forward="false" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1038,7 +1021,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/BusLines/Line30.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1066,7 +1049,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/feldis/mhd/java/Bus/Bus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
