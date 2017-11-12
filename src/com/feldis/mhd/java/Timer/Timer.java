@@ -1,6 +1,6 @@
 package com.feldis.mhd.java.Timer;
 
-import com.feldis.mhd.java.BusStop.BusStop;
+import com.feldis.mhd.java.busStop.BusStop;
 
 import static com.feldis.mhd.java.utils.CalculateDistance.distance;
 

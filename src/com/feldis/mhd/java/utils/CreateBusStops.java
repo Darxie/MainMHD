@@ -1,18 +1,12 @@
 package com.feldis.mhd.java.utils;
 
-import com.feldis.mhd.java.BusLines.BusLine;
-import com.feldis.mhd.java.BusLines.Line30;
-import com.feldis.mhd.java.BusStop.BusStop;
-import com.feldis.mhd.java.Person.Passenger;
-import com.feldis.mhd.java.Timer.Timer;
-
-import java.util.Arrays;
+import com.feldis.mhd.java.busStop.BusStop;
 
 import static com.feldis.mhd.java.utils.CalculateDistance.distance;
 
 public class CreateBusStops {
 
-    public static BusStop[] CreateBusStops() {
+    public static BusStop[] CreateBusStops(int linka) {
 
         BusStop Karadzicova = new BusStop(10,20, RandomizeNumberOfPeople.main(), "Karadzicova");
         BusStop Slovnaftska = new BusStop(35,-40, RandomizeNumberOfPeople.main(), "Slovnaftska");
@@ -26,7 +20,13 @@ public class CreateBusStops {
         BusStop Vysoka = new BusStop(-46,-23, RandomizeNumberOfPeople.main(), "Vysoka");
         BusStop Postova = new BusStop(51,40, RandomizeNumberOfPeople.main(), "Postova");
 
+        if (linka == 30) {
+            return new BusStop[]{Gagarinova, Karadzicova, Mudronova, Botanicka, Slovnaftska};
+        }
 
+        if (linka == 50) {
+            return new BusStop[]{Postova, Vysoka, Alexyho, Tovarenska, Kuliskova};
+        }
 
 
         //System.out.println(Lafranconi.posX + " " + Lafranconi.posY + " " + Lafranconi.nOfPeople);
@@ -35,6 +35,7 @@ public class CreateBusStops {
         System.out.println(distance(Kuliskova.posX,Kuliskova.posY,Lafranconi.posX,Lafranconi.posY));
 
         //System.out.println(new Timer(Kuliskova,Lafranconi).time);
-        return new BusStop[]{Gagarinova, Karadzicova, Mudronova, Botanicka, Slovnaftska};
+
+        return new BusStop[]{};
     }
 }
