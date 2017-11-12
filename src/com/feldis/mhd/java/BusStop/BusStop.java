@@ -1,4 +1,4 @@
-package com.feldis.mhd.java.BusStop;
+package com.feldis.mhd.java.busStop;
 
 public class BusStop {
     //bus stops are created using the CreateBusStops() method

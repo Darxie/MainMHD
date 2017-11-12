@@ -1,6 +1,6 @@
-package com.feldis.mhd.java.Person;
+package com.feldis.mhd.java.person;
 
-import com.feldis.mhd.java.NameList.RandomNameGenerator;
+import com.feldis.mhd.java.nameList.RandomNameGenerator;
 
 public class BusDriver extends Person{
 
@@ -8,7 +8,7 @@ public class BusDriver extends Person{
     private static int counter = 0;
     private String name;
 
-    private BusDriver(){
+    public BusDriver() {
         super();
         isBusDriver = true;
         counter++;

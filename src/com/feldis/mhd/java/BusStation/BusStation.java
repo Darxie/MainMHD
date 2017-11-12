@@ -1,4 +1,4 @@
-package com.feldis.mhd.java.BusStation;
+package com.feldis.mhd.java.busStation;
 
 public class BusStation {
 

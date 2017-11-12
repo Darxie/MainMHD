@@ -1,6 +1,6 @@
-package com.feldis.mhd.java.Person;
+package com.feldis.mhd.java.person;
 
-import com.feldis.mhd.java.NameList.RandomNameGenerator;
+import com.feldis.mhd.java.nameList.RandomNameGenerator;
 
 public class Person {
 

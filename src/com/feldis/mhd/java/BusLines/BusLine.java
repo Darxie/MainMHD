@@ -1,6 +1,6 @@
-package com.feldis.mhd.java.BusLines;
+package com.feldis.mhd.java.busLines;
 
-import com.feldis.mhd.java.BusStop.BusStop;
+import com.feldis.mhd.java.busStop.BusStop;
 
 import java.util.ArrayList;
 import java.util.Arrays;
