@@ -2,6 +2,7 @@ package com.feldis.mhd.java.Person;
 
 import com.feldis.mhd.java.Bus.Bus;
 import com.feldis.mhd.java.BusLines.Line30;
+import com.feldis.mhd.java.BusLines.Line50;
 import com.feldis.mhd.java.Timer.Timer;
 
 import java.util.Scanner;
@@ -37,6 +38,36 @@ public class Dispatcher {
                     return;
                 }
                 bus.moveNextStop();
+                System.out.println("elapsed time " + timer.time);
+                System.out.println("--------------------");
+
+            }
+        }
+        if (num == 50) {
+            new Line50();
+            Bus buss = new Bus();
+            BusDriver pista = new BusDriver();
+            Timer timer = new Timer();
+            for (int i = 0; i < Line50.line.size(); i++) {
+                //todo EVERYTHING flow
+                if (i < Line50.line.size() - 1) {
+                    timer.addTime(Line50.line.get(i), Line50.line.get(i + 1));
+                }
+                int getOff = 0;
+                if (i > 0) {
+                    buss.stop();
+                    getOff = buss.getOff();
+                }
+                System.out.println("Stojim na zastavke: " + Line50.line.get(i).name);
+                Passenger.createPassengers(Line50.line.get(i).nOfPeople, buss);
+                System.out.println("Nastupilo " + Line50.line.get(i).nOfPeople + " ludi");
+                System.out.println("Vystupilo " + getOff + " ludi");
+                System.out.println("V autobuse je este volnych: " + buss.freeSpace + " miest");
+                if (i == Line50.line.size() - 1) {
+                    System.out.println("Posledna zastavka");
+                    return;
+                }
+                buss.moveNextStop();
                 System.out.println("elapsed time " + timer.time);
                 System.out.println("--------------------");
 
