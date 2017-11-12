@@ -1,4 +1,4 @@
-package com.feldis.mhd.java.nameList;
+package com.feldis.mhd.java.NameList;
 
 class NameList {
 

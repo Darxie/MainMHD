@@ -1,6 +1,6 @@
-package com.feldis.mhd.java.bus;
+package com.feldis.mhd.java.Bus;
 
-import com.feldis.mhd.java.person.Passenger;
+import com.feldis.mhd.java.Person.Passenger;
 import com.feldis.mhd.java.utils.RandomizeNumberOfPeople;
 
 public class Bus {

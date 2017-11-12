@@ -1,7 +1,7 @@
-package com.feldis.mhd.java.person;
+package com.feldis.mhd.java.Person;
 
-import com.feldis.mhd.java.bus.Bus;
-import com.feldis.mhd.java.nameList.RandomNameGenerator;
+import com.feldis.mhd.java.Bus.Bus;
+import com.feldis.mhd.java.NameList.RandomNameGenerator;
 
 public class Passenger extends Person {
     public String name;

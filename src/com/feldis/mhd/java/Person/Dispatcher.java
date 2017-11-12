@@ -1,7 +1,7 @@
-package com.feldis.mhd.java.person;
+package com.feldis.mhd.java.Person;
 
-import com.feldis.mhd.java.bus.Bus;
-import com.feldis.mhd.java.busLines.Line30;
+import com.feldis.mhd.java.Bus.Bus;
+import com.feldis.mhd.java.BusLines.Line30;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.feldis.mhd.java.events;
+package com.feldis.mhd.java.Events;
 
 public class TicketCheck {
 }
