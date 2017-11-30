@@ -6,12 +6,12 @@ import com.feldis.mhd.java.NameList.RandomNameGenerator;
 public class Passenger extends Person {
     public String name;
 
-    public Passenger(){
+    public Passenger() {
         this.name = RandomNameGenerator.funkcia();
     }
 
     public static void createPassengers(int number, Bus bus) {
-        for(int i=0; i<number;i++){
+        for (int i = 0; i < number; i++) {
             //Passenger passenger = new Passenger();
             bus.getIn(new Passenger());
         }

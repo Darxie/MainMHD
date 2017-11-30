@@ -4,12 +4,13 @@ import com.feldis.mhd.java.NameList.RandomNameGenerator;
 
 public class Person {
 
+    String nameOfPerson;
+
     public Person() {
-        String nameOfPerson = RandomNameGenerator.funkcia();
+        nameOfPerson = RandomNameGenerator.funkcia();
+
         //System.out.println(nameOfPerson);
     }
-
-
 
 
 }

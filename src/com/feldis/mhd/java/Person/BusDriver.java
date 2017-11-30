@@ -2,7 +2,7 @@ package com.feldis.mhd.java.Person;
 
 import com.feldis.mhd.java.NameList.RandomNameGenerator;
 
-public class BusDriver extends Person{
+public class BusDriver extends Person {
 
     private boolean isBusDriver;
     private static int counter = 0;
@@ -27,5 +27,6 @@ public class BusDriver extends Person{
         System.out.println(prvy.name);
         System.out.println(druhy.isBusDriver + " " + druhy.name);
         System.out.println(numberOfAvailableDrivers());
+        System.out.println(treti.name);
     }
 }

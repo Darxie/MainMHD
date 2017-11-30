@@ -5,7 +5,7 @@ import com.feldis.mhd.java.utils.CreateBusStops;
 
 import java.util.Arrays;
 
-public class Line30 extends BusLine{
+public class Line30 extends BusLine {
 
     public Line30() {
         BusStop[] busStops = CreateBusStops.CreateBusStops(30);

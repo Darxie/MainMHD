@@ -6,30 +6,44 @@ import com.feldis.mhd.java.utils.RandomizeNumberOfPeople;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 public class Bus {
 
     boolean hasEnoughFreeSpace = true;
     public int freeSpace = 100;
     int speed;
-    List<Passenger> passengers = new ArrayList<>();
+    public static List<Passenger> passengers = new ArrayList<>();
 
-    public void moveNextStop(){
-        System.out.println("Number of passengers is: " + (100 - freeSpace));
+    public Bus() {
+
+    }
+
+    public Bus(String string) {
+        System.out.println("ja som " + string);
+    }
+
+    public void moveNextStop() {
+        //System.out.println("Number of passengers is: " + (100 - freeSpace));
         System.out.println("Moving");
         this.speed = 45;
     }
 
-    public void stop(){
+    public void stop() {
         this.speed = 0;
         System.out.println("Not moving");
     }
 
-    public void getIn(Passenger passenger){
-        if (freeSpace < 1){
+    public void stop(boolean isLastStop) {
+        System.out.println("This is the last stop");
+    }
+
+
+    //todo oznacovace
+
+    public void getIn(Passenger passenger) {
+        if (freeSpace < 1) {
             this.hasEnoughFreeSpace = false;
-            System.out.println("Cannot take more nOfPeople");
+            System.out.println("Cannot take more people");
             return;
         }
         this.freeSpace--;
