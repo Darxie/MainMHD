@@ -8,19 +8,19 @@ import java.util.Iterator;
 import java.util.List;
 
 public class ShortBus extends Bus {
-    public static List<Passenger> passengers = new ArrayList<>();
+    public static List<Passenger> passengersSB = new ArrayList<>();
     public int freeSpace = 50;
 
     public int getOff() {
         int gettingOff = RandomizeNumberOfPeople.randomTo(50 - freeSpace);
-        Iterator<Passenger> iterator = passengers.iterator();
+        Iterator<Passenger> iterator = passengersSB.iterator();
         for (int i = 0; i < gettingOff - 1; i++) {
             iterator.next();
             iterator.remove();
         }
         this.freeSpace += gettingOff;
-        if (freeSpace > 50) {
-            freeSpace = 50;
+        if (this.freeSpace > 50) {
+            this.freeSpace = 50;
         }
         if (freeSpace >= 1) {
             this.hasEnoughFreeSpace = true;

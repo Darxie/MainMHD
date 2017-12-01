@@ -127,7 +127,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="com.feldis.mhd.java.Timer.Timer" project="mhdd" 
+  <class id="15" language="java" name="com.feldis.mhd.java.utils.Timer" project="mhdd"
     file="/mhdd/MainMHD/src/com/feldis/mhd/java/Timer/Timer.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="117" width="182" x="1222" y="121"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

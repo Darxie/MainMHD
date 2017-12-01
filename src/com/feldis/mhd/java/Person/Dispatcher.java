@@ -5,16 +5,19 @@ import com.feldis.mhd.java.Bus.ShortBus;
 import com.feldis.mhd.java.BusLines.Line30;
 import com.feldis.mhd.java.BusLines.Line50;
 import com.feldis.mhd.java.BusStop.BusStop;
-import com.feldis.mhd.java.Timer.Timer;
+import com.feldis.mhd.java.NameList.RandomNameGenerator;
+import com.feldis.mhd.java.utils.Timer;
 
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
 
 public class Dispatcher extends Person {
+    //public String name = nameOfPerson;
 
     public Dispatcher() throws InterruptedException {
-        System.out.println("Choose (type) the line you want to follow : 30 or 50");
+        this.nameOfPerson = RandomNameGenerator.funkcia();
+        System.out.println("Choose (type in) the line you want to follow : 30 or 50");
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
         if (num == 30) {
@@ -32,112 +35,55 @@ public class Dispatcher extends Person {
             Timer timer = new Timer();
             flow(Line50.line, timer, bus);
         }
-                /*if (i < Line30.line.size() - 1) {
-                    useTimer(timer, i);
-                }
-                int getOff = 0;
-                if (i > 0) {
-                    bus.stop();
-                    getOff = bus.getOff();
-                }
-                flow(Line30.line, i, timer, bus);
-
-                System.out.println("Stojim na zastavke: " + Line30.line.get(i).name);
-                Passenger.createPassengers(Line30.line.get(i).nOfPeople, bus);
-                sleep();
-                System.out.println("Nastupilo " + Line30.line.get(i).nOfPeople + " ludi");
-                sleep();
-                /*if (i > 0) {
-                    System.out.println("Vystupilo " + getOff + " ludi");
-                }
-                sleep();
-                System.out.println("V autobuse je este volnych: " + bus.freeSpace + " miest");
-                if (i == Line30.line.size() - 1) {
-                    System.out.println("Posledna zastavka");
-                    return;
-                }
-                bus.moveNextStop();
-                sleep();
-                System.out.println("elapsed time " + timer.time);
-                System.out.println("Do you want to print the names of the people in the bus?");
-                Scanner scanner = new Scanner(System.in);
-                String anonie = in.next();
-                if (Objects.equals(anonie, "yes")) {
-                    for (Passenger p : Bus.passengers) {
-                        System.out.println(p.name);
-                    }
-                } else continue;
-
-                System.out.println("--------------------");
-
-            }*/
-                /*if (num == 50) {
-                new Line50();
-                Bus buss = new Bus();
-                BusDriver pista = new BusDriver();
-                Timer timer = new Timer();
-                for (int i = 0; i < Line50.line.size(); i++) {
-                    //todo EVERYTHING flow
-                    if (i < Line50.line.size() - 1) {
-                        timer.addTime(Line50.line.get(i), Line50.line.get(i + 1));
-                    }
-                    int getOff = 0;
-                    if (i > 0) {
-                        buss.stop();
-                        getOff = buss.getOff();
-                    }
-                    System.out.println("Stojim na zastavke: " + Line50.line.get(i).name);
-                    Passenger.createPassengers(Line50.line.get(i).nOfPeople, buss);
-                    System.out.println("Nastupilo " + Line50.line.get(i).nOfPeople + " ludi");
-                    System.out.println("Vystupilo " + getOff + " ludi");
-                    System.out.println("V autobuse je este volnych: " + buss.freeSpace + " miest");
-                    if (i == Line50.line.size() - 1) {
-                        System.out.println("Posledna zastavka");
-                        return;
-                    }
-                    buss.moveNextStop();
-                    System.out.println("elapsed time " + timer.time);
-                    System.out.println("--------------------");
-
-                }
-            }*/
-
-
     }
 
-    public static void useTimer(Timer timer, int i) {
+    private static void useTimer(Timer timer, int i) {
         timer.addTime(Line30.line.get(i), Line30.line.get(i + 1));
     }
 
-    void sleep() throws InterruptedException {
+    private String refactorTime(double totalSecs) {
+        int hours = (int) (totalSecs / 3600);
+        int minutes = (int) ((totalSecs % 3600) / 60);
+        int seconds = (int) (totalSecs % 60);
+
+        return String.format("%02dh %02dmin %02ds", hours, minutes, seconds);
+    }
+
+    private void sleep() throws InterruptedException {
         Thread.sleep(1000);
     }
 
-    void flow(ArrayList<BusStop> line, Timer timer, Bus bus) throws InterruptedException {
+    private void flow(ArrayList<BusStop> line, Timer timer, Bus bus) throws InterruptedException {
         for (int i = 0; i < Line30.line.size(); i++) {
-            if (i < Line30.line.size() - 1) {
-                useTimer(timer, i);
+            for (int j = 1; j < Line30.line.size() - 1; j++) {
+                useTimer(timer, j);
             }
+            //if (i < Line30.line.size() - 1) {
+            //  useTimer(timer, i);
+            //}
             if (i == Line30.line.size() - 1) {
-                System.out.println(" Nasleduje posledna zastavka");
+                //System.out.println("The next stop is the terminal");
+                bus.stop(true);
+                sleep();
             }
-            System.out.println("Stojim na zastavke: " + Line30.line.get(i).name);
+            System.out.println("The actual stop is: " + Line30.line.get(i).name);
+            sleep();
             int getOff;
             if (i > 0) {
                 bus.stop();
                 getOff = bus.getOff();
-                System.out.println("Vystupilo " + getOff + " ludi");
+                System.out.println(getOff + " People got off the bus");
             }
             sleep();
             Passenger.createPassengers(Line30.line.get(i).nOfPeople, bus);
             sleep();
-            System.out.println("Nastupilo " + Line30.line.get(i).nOfPeople + " ludi");
+            System.out.println(Line30.line.get(i).nOfPeople + " people got into the bus");
             sleep();
-            System.out.println("V autobuse je este volnych: " + bus.freeSpace + " miest");
+            System.out.println("Free space in the bus: " + bus.freeSpace + " places");
             sleep();
-            System.out.println("elapsed time " + timer.time);
+            System.out.println("elapsed time " + refactorTime(Math.round(timer.time * 100) / 100));
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Do you want to print the names of the people in the bus?");
+            System.out.println("Do you want to print the names of the people in the bus? yes/no");
             String anonie = scanner.next();
             if (Objects.equals(anonie, "yes")) {
                 for (Passenger p : Bus.passengers) {
@@ -145,7 +91,8 @@ public class Dispatcher extends Person {
                 }
             }
             sleep();
-            bus.moveNextStop();
+            if (i < Line30.line.size() - 1)
+                bus.moveNextStop();
             System.out.println("--------------------");
             sleep();
 

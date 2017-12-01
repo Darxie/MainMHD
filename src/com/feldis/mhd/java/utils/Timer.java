@@ -1,4 +1,4 @@
-package com.feldis.mhd.java.Timer;
+package com.feldis.mhd.java.utils;
 
 import com.feldis.mhd.java.BusStop.BusStop;
 
@@ -13,6 +13,6 @@ public class Timer {
     }
 
     public void addTime(BusStop stop, BusStop busStop) {
-        this.time += distance(stop.posX, stop.posY, busStop.posX, busStop.posY) * 1.5;
+        this.time += distance(stop.posX, stop.posY, busStop.posX, busStop.posY) * 3.5;
     }
 }

@@ -20,21 +20,23 @@ public class Bus {
 
     public Bus(String string) {
         System.out.println("ja som " + string);
+
     }
 
     public void moveNextStop() {
         //System.out.println("Number of passengers is: " + (100 - freeSpace));
-        System.out.println("Moving");
+        System.out.println("People got off and in, moving to the next stop");
         this.speed = 45;
     }
 
     public void stop() {
         this.speed = 0;
-        System.out.println("Not moving");
+        System.out.println("Stopping");
     }
 
     public void stop(boolean isLastStop) {
-        System.out.println("This is the last stop");
+        if (isLastStop)
+            System.out.println("This is the last stop");
     }
 
 
