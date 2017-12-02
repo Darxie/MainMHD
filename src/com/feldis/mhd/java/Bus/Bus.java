@@ -9,18 +9,28 @@ import java.util.List;
 
 public class Bus {
 
-    boolean hasEnoughFreeSpace = true;
-    public int freeSpace = 100;
+    public int freeSpace;
+    boolean hasEnoughFreeSpace;
     int speed;
     public static List<Passenger> passengers = new ArrayList<>();
 
     public Bus() {
-
+        this.freeSpace = 80;
+        this.hasEnoughFreeSpace = true;
     }
 
     public Bus(String string) {
         System.out.println("ja som " + string);
+        this.freeSpace = 80;
+        this.hasEnoughFreeSpace = true;
 
+    }
+
+    public Bus(boolean isShort) {
+        if (isShort) {
+            this.freeSpace = 40;
+            this.hasEnoughFreeSpace = true;
+        }
     }
 
     public void moveNextStop() {
@@ -34,6 +44,7 @@ public class Bus {
         System.out.println("Stopping");
     }
 
+    //pretazenie metody
     public void stop(boolean isLastStop) {
         if (isLastStop)
             System.out.println("This is the last stop");
@@ -52,16 +63,34 @@ public class Bus {
         passengers.add(passenger);
     }
 
-    public int getOff() {
-        int gettingOff = RandomizeNumberOfPeople.randomTo(100 - freeSpace);
+    public int getOff(boolean isShort) {
+        int gettingOff = RandomizeNumberOfPeople.randomTo(40 - freeSpace);
         Iterator<Passenger> iterator = passengers.iterator();
         for (int i = 0; i < gettingOff - 1; i++) {
             iterator.next();
             iterator.remove();
         }
         this.freeSpace += gettingOff;
-        if (freeSpace > 100) {
-            freeSpace = 100;
+        if (this.freeSpace > 40) {
+            this.freeSpace = 40;
+        }
+        if (freeSpace > 0) {
+            this.hasEnoughFreeSpace = true;
+//            System.out.println("There are " + freeSpace + " places free in the bus");
+        }
+        return gettingOff;
+    }
+
+    public int getOff() {
+        int gettingOff = RandomizeNumberOfPeople.randomTo(80 - freeSpace + 1);
+        Iterator<Passenger> iterator = passengers.iterator();
+        for (int i = 0; i < gettingOff - 1; i++) {
+            iterator.next();
+            iterator.remove();
+        }
+        this.freeSpace += gettingOff;
+        if (freeSpace > 80) {
+            freeSpace = 80;
         }
         if (freeSpace >= 1) {
             this.hasEnoughFreeSpace = true;

@@ -4,10 +4,9 @@ import com.feldis.mhd.java.Bus.Bus;
 import com.feldis.mhd.java.NameList.RandomNameGenerator;
 
 public class Passenger extends Person {
-    public String name;
 
     public Passenger() {
-        this.name = RandomNameGenerator.funkcia();
+        this.nameOfPerson = RandomNameGenerator.funkcia();
     }
 
     public static void createPassengers(int number, Bus bus) {

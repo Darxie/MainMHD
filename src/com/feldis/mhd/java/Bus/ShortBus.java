@@ -1,17 +1,15 @@
 package com.feldis.mhd.java.Bus;
 
 import com.feldis.mhd.java.Person.Passenger;
-import com.feldis.mhd.java.utils.RandomizeNumberOfPeople;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class ShortBus extends Bus {
     public static List<Passenger> passengersSB = new ArrayList<>();
     public int freeSpace = 50;
 
-    public int getOff() {
+    /*public int getOff() {
         int gettingOff = RandomizeNumberOfPeople.randomTo(50 - freeSpace);
         Iterator<Passenger> iterator = passengersSB.iterator();
         for (int i = 0; i < gettingOff - 1; i++) {
@@ -27,5 +25,5 @@ public class ShortBus extends Bus {
 //            System.out.println("There are " + freeSpace + " places free in the bus");
         }
         return gettingOff;
-    }
+    }*/
 }

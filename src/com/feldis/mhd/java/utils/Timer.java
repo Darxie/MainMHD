@@ -12,6 +12,10 @@ public class Timer {
 
     }
 
+    public void addTime(int time) {
+        this.time += time;
+    }
+
     public void addTime(BusStop stop, BusStop busStop) {
         this.time += distance(stop.posX, stop.posY, busStop.posX, busStop.posY) * 3.5;
     }

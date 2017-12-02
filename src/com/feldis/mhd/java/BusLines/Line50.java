@@ -11,8 +11,8 @@ public class Line50 extends BusLine {
         BusStop[] busStops = CreateBusStops.CreateBusStops(50);
         createLine50(busStops);
 
-        System.out.println(Arrays.toString(Line30.line.toArray()));
-        System.out.println(getFirstStop());
+        //System.out.println(Arrays.toString(Line30.line.toArray()));
+        //System.out.println(getFirstStop());
     }
 
     public void createLine50(BusStop... busStop) {

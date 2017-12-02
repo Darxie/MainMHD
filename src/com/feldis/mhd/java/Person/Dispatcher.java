@@ -1,10 +1,11 @@
 package com.feldis.mhd.java.Person;
 
 import com.feldis.mhd.java.Bus.Bus;
-import com.feldis.mhd.java.Bus.ShortBus;
+import com.feldis.mhd.java.BusLines.BusLine;
 import com.feldis.mhd.java.BusLines.Line30;
 import com.feldis.mhd.java.BusLines.Line50;
 import com.feldis.mhd.java.BusStop.BusStop;
+import com.feldis.mhd.java.Events.TrafficJam;
 import com.feldis.mhd.java.NameList.RandomNameGenerator;
 import com.feldis.mhd.java.utils.Timer;
 
@@ -17,23 +18,28 @@ public class Dispatcher extends Person {
 
     public Dispatcher() throws InterruptedException {
         this.nameOfPerson = RandomNameGenerator.funkcia();
-        System.out.println("Choose (type in) the line you want to follow : 30 or 50");
+        System.out.println("Name of dispatcher: " + this.nameOfPerson);
+        System.out.println("Dispatcher says: Choose (type in) the line you want to follow : 30 or 50");
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
         if (num == 30) {
             new Line30();
             //todo let user select bus
             Bus bus = new Bus("autobus linky 30");
-            BusDriver jozi = new BusDriver();
+            BusDriver bd = new BusDriver();
+            System.out.println("Name of bus driver: " + bd.nameOfPerson);
+            System.out.println("--------------------");
             Timer timer = new Timer();
-            flow(Line30.line, timer, bus);
+            flow(Line30.line, timer, bus, 30);
         }
         if (num == 50) {
             new Line50();
-            Bus bus = new ShortBus();
-            BusDriver busDriver = new BusDriver();
+            Bus bus = new Bus(true); //upcast????
+            Person busDriver = new BusDriver(); //upcast????
+            System.out.println("Name of bus driver: " + busDriver.nameOfPerson);
+            System.out.println("--------------------");
             Timer timer = new Timer();
-            flow(Line50.line, timer, bus);
+            flow(Line50.line, timer, bus, 50);
         }
     }
 
@@ -53,15 +59,16 @@ public class Dispatcher extends Person {
         Thread.sleep(1000);
     }
 
-    private void flow(ArrayList<BusStop> line, Timer timer, Bus bus) throws InterruptedException {
-        for (int i = 0; i < Line30.line.size(); i++) {
-            for (int j = 1; j < Line30.line.size() - 1; j++) {
+    private void flow(ArrayList<BusStop> line, Timer timer, Bus bus, int num) throws InterruptedException {
+        for (int i = 0; i < BusLine.line.size(); i++) {
+            for (int j = 1; j < BusLine.line.size() - 1; j++) {
                 useTimer(timer, j);
             }
+            TrafficJam.Traffic(timer);
             //if (i < Line30.line.size() - 1) {
             //  useTimer(timer, i);
             //}
-            if (i == Line30.line.size() - 1) {
+            if (i == BusLine.line.size() - 1) {
                 //System.out.println("The next stop is the terminal");
                 bus.stop(true);
                 sleep();
@@ -69,15 +76,20 @@ public class Dispatcher extends Person {
             System.out.println("The actual stop is: " + Line30.line.get(i).name);
             sleep();
             int getOff;
-            if (i > 0) {
+            if (i > 0 && num == 30) {
                 bus.stop();
                 getOff = bus.getOff();
                 System.out.println(getOff + " People got off the bus");
             }
+            if (i > 0 && num == 50) {
+                bus.stop();
+                getOff = bus.getOff(true);
+                System.out.println(getOff + " People got off the bus");
+            }
             sleep();
-            Passenger.createPassengers(Line30.line.get(i).nOfPeople, bus);
+            Passenger.createPassengers(BusLine.line.get(i).nOfPeople, bus);
             sleep();
-            System.out.println(Line30.line.get(i).nOfPeople + " people got into the bus");
+            System.out.println(BusLine.line.get(i).nOfPeople + " people got into the bus");
             sleep();
             System.out.println("Free space in the bus: " + bus.freeSpace + " places");
             sleep();
@@ -87,15 +99,16 @@ public class Dispatcher extends Person {
             String anonie = scanner.next();
             if (Objects.equals(anonie, "yes")) {
                 for (Passenger p : Bus.passengers) {
-                    System.out.println(p.name);
+                    System.out.println(p.nameOfPerson);
                 }
             }
             sleep();
-            if (i < Line30.line.size() - 1)
+            if (i < BusLine.line.size() - 1)
                 bus.moveNextStop();
             System.out.println("--------------------");
             sleep();
 
         }
+        System.out.println("Thank you for using our services.");
     }
 }

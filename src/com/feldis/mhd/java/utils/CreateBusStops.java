@@ -19,7 +19,7 @@ public class CreateBusStops {
         BusStop Postova = new BusStop(51, 40, RandomizeNumberOfPeople.main(), "Postova");
 
         if (linka == 30) {
-            return new BusStop[]{Gagarinova, Karadzicova, Mudronova, Botanicka, Slovnaftska};
+            return new BusStop[]{Gagarinova, Karadzicova, Mudronova, Botanicka, Slovnaftska, Mudronova, Kuliskova};
         }
 
         if (linka == 50) {

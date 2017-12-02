@@ -7,7 +7,7 @@ public class Person {
     String nameOfPerson;
 
     public Person() {
-        nameOfPerson = RandomNameGenerator.funkcia();
+        this.nameOfPerson = RandomNameGenerator.funkcia();
 
         //System.out.println(nameOfPerson);
     }
