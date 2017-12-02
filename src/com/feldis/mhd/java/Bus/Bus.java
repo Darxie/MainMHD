@@ -38,11 +38,16 @@ public class Bus {
         }
     }
 
-    public void moveNextStop() {
+    public void moveNextStop(int i) {
         //System.out.println("Number of passengers is: " + (100 - freeSpace));
-        System.out.println("People got off and in, moving to the next stop");
+
         this.speed = 45;
         this.tank -= 2;
+        if (i == 0) {
+            System.out.println("Welcome to the bus, moving to the next stop");
+        } else {
+            System.out.println("People got off and in, moving to the next stop");
+        }
     }
 
     public void stop() {

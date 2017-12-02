@@ -20,6 +20,6 @@ public class Accountant extends Person {
 
     @Override
     public void die() {
-        System.out.println("The person" + this.nameOfPerson + "died");
+        System.out.println("The person " + this.nameOfPerson + " died");
     }
 }

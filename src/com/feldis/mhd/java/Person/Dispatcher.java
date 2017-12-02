@@ -5,6 +5,7 @@ import com.feldis.mhd.java.BusLines.BusLine;
 import com.feldis.mhd.java.BusLines.Line30;
 import com.feldis.mhd.java.BusLines.Line50;
 import com.feldis.mhd.java.BusStop.BusStop;
+import com.feldis.mhd.java.Events.Accident;
 import com.feldis.mhd.java.Events.TrafficJam;
 import com.feldis.mhd.java.NameList.RandomNameGenerator;
 import com.feldis.mhd.java.utils.Timer;
@@ -12,6 +13,8 @@ import com.feldis.mhd.java.utils.Timer;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Scanner;
+
+import static com.feldis.mhd.java.Bus.Bus.passengers;
 
 public class Dispatcher extends Person {
     //public String name = nameOfPerson;
@@ -30,7 +33,7 @@ public class Dispatcher extends Person {
             System.out.println("Name of bus driver: " + bd.nameOfPerson);
             System.out.println("--------------------");
             Timer timer = new Timer();
-            flow(Line30.line, timer, bus, 30);
+            flow(Line30.line, timer, bus, 30, bd);
         }
         if (num == 50) {
             new Line50();
@@ -39,7 +42,7 @@ public class Dispatcher extends Person {
             System.out.println("Name of bus driver: " + busDriver.nameOfPerson);
             System.out.println("--------------------");
             Timer timer = new Timer();
-            flow(Line50.line, timer, bus, 50);
+            flow(Line50.line, timer, bus, 50, (BusDriver) busDriver); //downcast
         }
     }
 
@@ -59,12 +62,13 @@ public class Dispatcher extends Person {
         Thread.sleep(1000);
     }
 
-    private void flow(ArrayList<BusStop> line, Timer timer, Bus bus, int num) throws InterruptedException {
+    private void flow(ArrayList<BusStop> line, Timer timer, Bus bus, int num, BusDriver busDriver) throws InterruptedException {
         for (int i = 0; i < BusLine.line.size(); i++) {
             for (int j = 1; j < BusLine.line.size() - 1; j++) {
                 useTimer(timer, j);
             }
             TrafficJam.Traffic(timer);
+            Accident.accident(timer, Bus.passengers, busDriver);
             //if (i < Line30.line.size() - 1) {
             //  useTimer(timer, i);
             //}
@@ -76,18 +80,22 @@ public class Dispatcher extends Person {
             System.out.println("The actual stop is: " + Line30.line.get(i).name);
             sleep();
             int getOff;
-            if (i > 0 && num == 30) {
-                bus.stop();
-                getOff = bus.getOff();
-                System.out.println(getOff + " People got off the bus");
-            }
-            if (i > 0 && num == 50) {
-                bus.stop();
-                getOff = bus.getOff(true);
-                System.out.println(getOff + " People got off the bus");
-            }
+            if (passengers.size() != 0)
+                if ((i > 0) && (num == 30)) {
+                    bus.stop();
+                    getOff = bus.getOff();
+                    System.out.println(getOff + " People got off the bus");
+                }
+            if (passengers.size() != 0)
+                if ((i > 0) && (num == 50)) {
+                    bus.stop();
+                    getOff = bus.getOff(true);
+                    System.out.println(getOff + " People got off the bus");
+                }
             sleep();
-            Passenger.createPassengers(BusLine.line.get(i).nOfPeople, bus);
+            if (i < BusLine.line.size() - 1) {
+                Passenger.createPassengers(BusLine.line.get(i).nOfPeople, bus);
+            }
             Accountant.addMoneyToChest(BusLine.line.get(i).nOfPeople);
             sleep();
             System.out.println((BusLine.line.get(i).nOfPeople - bus.counter) + " people got into the bus");
@@ -99,13 +107,15 @@ public class Dispatcher extends Person {
             System.out.println("Do you want to print the names of the people in the bus? yes/no");
             String anonie = scanner.next();
             if (Objects.equals(anonie, "yes")) {
-                for (Passenger p : Bus.passengers) {
-                    System.out.println(p.nameOfPerson);
+                for (Person p : Bus.passengers) {
+                    System.out.print(p.nameOfPerson + " ");
                 }
+                System.out.println("");
             }
             sleep();
             if (i < BusLine.line.size() - 1)
-                bus.moveNextStop();
+                bus.moveNextStop(i);
+
             System.out.println("--------------------");
             sleep();
             bus.counter = 0;

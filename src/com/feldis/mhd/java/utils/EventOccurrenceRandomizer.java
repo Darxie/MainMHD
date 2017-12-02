@@ -4,7 +4,7 @@ public class EventOccurrenceRandomizer {
 
     public static int randomizer() {
 
-        int r = (int) (Math.random() * 10);
+        int r = (int) (Math.random() * 5);
         return r;
     }
 

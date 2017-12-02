@@ -4,7 +4,7 @@ import com.feldis.mhd.java.utils.EventOccurrenceRandomizer;
 import com.feldis.mhd.java.utils.Timer;
 
 public class TrafficJam {
-    //ToDo add time if jam occurs, make event occurrence randomizer
+    //ToDo add time if jam or accident occur
 
     public static void Traffic(Timer timer) {
 

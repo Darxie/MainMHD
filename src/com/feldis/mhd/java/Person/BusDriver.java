@@ -19,6 +19,6 @@ public class BusDriver extends Person {
 
     @Override
     public void die() {
-        System.out.println("The person" + this.nameOfPerson + "died");
+        System.out.println("Unfortunately, the bus driver " + this.nameOfPerson + " has died, too. RIP");
     }
 }
