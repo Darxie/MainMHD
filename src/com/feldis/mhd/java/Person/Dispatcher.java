@@ -88,8 +88,9 @@ public class Dispatcher extends Person {
             }
             sleep();
             Passenger.createPassengers(BusLine.line.get(i).nOfPeople, bus);
+            Accountant.addMoneyToChest(BusLine.line.get(i).nOfPeople);
             sleep();
-            System.out.println(BusLine.line.get(i).nOfPeople + " people got into the bus");
+            System.out.println((BusLine.line.get(i).nOfPeople - bus.counter) + " people got into the bus");
             sleep();
             System.out.println("Free space in the bus: " + bus.freeSpace + " places");
             sleep();
@@ -107,8 +108,16 @@ public class Dispatcher extends Person {
                 bus.moveNextStop();
             System.out.println("--------------------");
             sleep();
-
+            bus.counter = 0;
         }
         System.out.println("Thank you for using our services.");
+        System.out.println("STATUS:");
+        System.out.println("Money from passengers: " + Math.round((Accountant.chest * 100 / 100)) + "eur");
+        System.out.println("Final status of tank: " + bus.tank);
+    }
+
+    @Override
+    public void die() {
+        System.out.println("The person" + this.nameOfPerson + "died");
     }
 }

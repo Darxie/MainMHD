@@ -1,18 +1,20 @@
 package com.feldis.mhd.java.Person;
 
-import com.feldis.mhd.java.Bus.Bus;
 import com.feldis.mhd.java.NameList.RandomNameGenerator;
 
-public class Passenger extends Person {
+public class Accountant extends Person {
 
-    public Passenger() {
+    private static final double ticketPrice = 0.70;
+    public static double chest;
+
+
+    public Accountant() {
         this.nameOfPerson = RandomNameGenerator.funkcia();
     }
 
-    public static void createPassengers(int number, Bus bus) {
+    public static void addMoneyToChest(int number) {
         for (int i = 0; i < number; i++) {
-            //Passenger passenger = new Passenger();
-            bus.getIn(new Passenger());
+            chest += ticketPrice;
         }
     }
 

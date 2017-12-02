@@ -1,6 +1,7 @@
 package com.feldis.mhd.java.Bus;
 
 import com.feldis.mhd.java.Person.Passenger;
+import com.feldis.mhd.java.Person.Person;
 import com.feldis.mhd.java.utils.RandomizeNumberOfPeople;
 
 import java.util.ArrayList;
@@ -10,26 +11,30 @@ import java.util.List;
 public class Bus {
 
     public int freeSpace;
-    boolean hasEnoughFreeSpace;
-    int speed;
-    public static List<Passenger> passengers = new ArrayList<>();
+    public static List<Person> passengers = new ArrayList<>();
+    public int tank;
+    public int counter;
+    private boolean hasEnoughFreeSpace;
+    private int speed;
 
     public Bus() {
         this.freeSpace = 80;
         this.hasEnoughFreeSpace = true;
+        this.tank = 50;
     }
 
     public Bus(String string) {
         System.out.println("ja som " + string);
         this.freeSpace = 80;
         this.hasEnoughFreeSpace = true;
-
+        this.tank = 50;
     }
 
     public Bus(boolean isShort) {
         if (isShort) {
             this.freeSpace = 40;
             this.hasEnoughFreeSpace = true;
+            this.tank = 40;
         }
     }
 
@@ -37,6 +42,7 @@ public class Bus {
         //System.out.println("Number of passengers is: " + (100 - freeSpace));
         System.out.println("People got off and in, moving to the next stop");
         this.speed = 45;
+        this.tank -= 2;
     }
 
     public void stop() {
@@ -50,13 +56,11 @@ public class Bus {
             System.out.println("This is the last stop");
     }
 
-
-    //todo oznacovace
-
     public void getIn(Passenger passenger) {
         if (freeSpace < 1) {
             this.hasEnoughFreeSpace = false;
             System.out.println("Cannot take more people");
+            counter++;
             return;
         }
         this.freeSpace--;
@@ -65,7 +69,7 @@ public class Bus {
 
     public int getOff(boolean isShort) {
         int gettingOff = RandomizeNumberOfPeople.randomTo(40 - freeSpace);
-        Iterator<Passenger> iterator = passengers.iterator();
+        Iterator<Person> iterator = passengers.iterator();
         for (int i = 0; i < gettingOff - 1; i++) {
             iterator.next();
             iterator.remove();
@@ -82,8 +86,8 @@ public class Bus {
     }
 
     public int getOff() {
-        int gettingOff = RandomizeNumberOfPeople.randomTo(80 - freeSpace + 1);
-        Iterator<Passenger> iterator = passengers.iterator();
+        int gettingOff = RandomizeNumberOfPeople.randomTo(80 - freeSpace);
+        Iterator<Person> iterator = passengers.iterator();
         for (int i = 0; i < gettingOff - 1; i++) {
             iterator.next();
             iterator.remove();
@@ -98,6 +102,4 @@ public class Bus {
         }
         return gettingOff;
     }
-
-
 }

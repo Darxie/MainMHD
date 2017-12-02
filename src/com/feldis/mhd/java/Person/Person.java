@@ -2,7 +2,7 @@ package com.feldis.mhd.java.Person;
 
 import com.feldis.mhd.java.NameList.RandomNameGenerator;
 
-public class Person {
+public abstract class Person implements Die {
 
     String nameOfPerson;
 
@@ -11,6 +11,4 @@ public class Person {
 
         //System.out.println(nameOfPerson);
     }
-
-
 }
