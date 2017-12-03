@@ -37,8 +37,8 @@ public class Dispatcher extends Person {
         }
         if (num == 50) {
             new Line50();
-            Bus bus = new Bus(true); //upcast????
-            Person busDriver = new BusDriver(); //upcast????
+            Bus bus = new Bus(true);
+            Person busDriver = new BusDriver();
             System.out.println("Name of bus driver: " + busDriver.nameOfPerson);
             System.out.println("--------------------");
             Timer timer = new Timer();

@@ -2,6 +2,10 @@ package com.feldis.mhd.java.Person;
 
 import com.feldis.mhd.java.NameList.RandomNameGenerator;
 
+/* Accountant holds the chest, calculates the income based on the number of people
+    that get into the bus. Can die, too.
+ */
+
 public class Accountant extends Person {
 
     private static final double ticketPrice = 0.70;

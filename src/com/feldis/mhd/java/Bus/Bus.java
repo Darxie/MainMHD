@@ -59,6 +59,7 @@ public class Bus {
     public void stop(boolean isLastStop) {
         if (isLastStop)
             System.out.println("This is the last stop");
+        this.speed = 0;
     }
 
     public void getIn(Passenger passenger) {

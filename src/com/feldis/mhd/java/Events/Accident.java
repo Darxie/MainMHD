@@ -7,6 +7,10 @@ import com.feldis.mhd.java.utils.Timer;
 
 import java.util.List;
 
+/* Invokes the random accident event. The chance of accident is 1:6 atm.
+    Iterates the polymorphic people that are in the bus and adds time.
+ */
+
 public class Accident {
 
     public static void accident(Timer timer, List<Person> list, BusDriver busDriver) {
